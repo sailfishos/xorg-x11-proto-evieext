@@ -1,0 +1,19 @@
+Name: xorg-x11-proto-evieext
+Summary: X.Org X11 Protocol evieext
+Description: |
+  XEvIE is a X extension providing functionalities to allow a client to
+  intercept keyboard/mouse events, and optionally modify them or consume
+  them before delivery through the normal event delivery mechanisms.
+Version: 1.1.1
+Release: 0
+Group: Development/System
+License: MIT
+URL: http://www.x.org
+Sources:
+    - http://xorg.freedesktop.org/releases/individual/proto/evieext-%{version}.tar.bz2
+
+Provides: 
+    - evieext
+Configure: configure
+ConfigOptions:
+    - --libdir=%{_datadir}
